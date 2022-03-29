@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Food</title>
+        <link ref="icon" href="/favicon.ico" />
       </Head>
       <main>
         <Component {...pageProps} />
