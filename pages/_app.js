@@ -1,7 +1,17 @@
+import Head from 'next/head'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <title>Food</title>
+      </Head>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </>
+  )
 }
 
 export default MyApp
