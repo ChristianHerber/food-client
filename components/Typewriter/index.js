@@ -7,12 +7,12 @@ const Typewriter = (props) => {
     useEffect( () => {
         let currentText = ''
 
-        props.text.split('').foreach( (char, index) => {
+        props.text.split('').forEach( (char, index) => {
 
             setTimeout( () => {
                 currentText = currentText.slice(0, -1)
                 currentText += char
-                if(props.text.lenght != index + 1) {
+                if(props.text.lenght != index +1) {
                     currentText += '|'
                 }
                 setPhrase(currentText)
