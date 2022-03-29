@@ -1,4 +1,4 @@
-const toCurrency = () => {
+const toCurrency = (value) => {
 
     const formatter = Intl.NumberFormat('pt-BR', {
         style: 'currency',
