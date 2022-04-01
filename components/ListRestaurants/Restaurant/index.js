@@ -13,6 +13,7 @@ const Restaurant = (props) => {
                 <Card body className='clickable-effect'>
                     <Row>
                         <Col md={5} xs={12}>
+                        { props.image_url ?
                             <Image
                                 src={props.image_url}
                                 alt={props.name}
@@ -20,6 +21,7 @@ const Restaurant = (props) => {
                                 height={200}
                                 layout='responsive'
                             />
+                        : <img src='https://picsum.photos/300/200' className="img-fluid"/> }
                         </Col>
                         <Col md={5} xs={10}>
                             <h5>{truncateString(props.name, 25)}</h5>
